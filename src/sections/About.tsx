@@ -9,12 +9,12 @@ export function About() {
         <div className="mt-14 grid items-center gap-8 lg:grid-cols-[0.85fr_1.15fr]">
           {/* Brand visual — structured so a real photo can replace this block later */}
           <div className="animate-on-scroll relative mx-auto w-full max-w-sm">
-            <div className="relative aspect-square overflow-hidden rounded-sm border border-white/15 bg-[#080b12] shadow-[0_30px_90px_-30px_rgba(0,0,0,0.8)]">
+            <div className="relative aspect-square overflow-hidden rounded-sm">
               <div className="absolute inset-0 bg-grid opacity-25" aria-hidden />
               <div className="absolute -right-12 top-[-20%] h-[140%] w-8 rotate-[32deg] bg-accent/[0.08]" aria-hidden="true" />
               <div className="absolute bottom-0 left-0 top-0 w-px bg-accent/35" aria-hidden="true" />
               <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                <div className="rounded-2xl bg-ink-900/80 p-4 backdrop-blur">
+                <div className="p-4">
                   <img
                     src="/assets/BDsologo-transparent.png"
                     alt="Bedmansky Design Studio logo"

@@ -37,13 +37,14 @@ export function Portfolio() {
             </button>
 
             <div
-              className="portfolio-automation mt-8 rounded-xl border border-white/10 bg-[#0b0d12] p-4 text-white sm:p-5"
-              aria-label="Illustrative automation example: customer inquiry flows to automation, then to CRM and notification"
+              className="portfolio-automation-shell mt-8 rounded-2xl border border-[#0b1220]/10 bg-[#e4dfd5] p-2 sm:p-2.5"
+              aria-label="Illustrative automation concept: customer inquiry flows to automation, then to CRM and follow-up"
             >
+              <div className="portfolio-automation rounded-xl border border-white/10 bg-[#0b0d12] p-4 text-white sm:p-5">
               <div className="flex items-start justify-between gap-3">
                 <div>
                   <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#A7ADB8]">
-                    Workflow preview
+                    Illustrative automation concept
                   </p>
                   <p className="mt-1 text-sm font-semibold text-white">Every lead has a next step.</p>
                 </div>
@@ -68,11 +69,12 @@ export function Portfolio() {
                 ))}
               </ol>
               <div className="portfolio-automation__benefits">
-                {['Faster follow-up', 'Less manual admin', 'Time back for business'].map((benefit) => (
+                {['Faster follow-up', 'Less manual admin', 'Time saved'].map((benefit) => (
                   <span key={benefit}><Check size={11} aria-hidden /> {benefit}</span>
                 ))}
               </div>
-              <WorkflowDemoTrigger className="portfolio-automation__demo-link">View interactive demo <ArrowRight size={13} /></WorkflowDemoTrigger>
+              <WorkflowDemoTrigger className="portfolio-automation__demo-link">View Workflow Demo <ArrowRight size={13} /></WorkflowDemoTrigger>
+              </div>
             </div>
           </div>
 
