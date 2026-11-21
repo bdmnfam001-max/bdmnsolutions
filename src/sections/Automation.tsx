@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { FileText, Cpu, Database, BellRing } from 'lucide-react';
 import { SectionHeading } from '@/components/SectionHeading';
+import { WorkflowDemoTrigger } from '@/components/AutomationWorkflowDemo';
 
 const beforeItems = [
   'Manual data entry',
@@ -170,6 +171,10 @@ export function Automation() {
 
         <div className="animate-on-scroll">
           <WorkflowDiagram />
+          <div className="mt-6 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <p className="max-w-md text-sm leading-relaxed text-muted">See a simulated inquiry move through the workflow from first contact to follow-up.</p>
+            <WorkflowDemoTrigger className="btn-primary">SEE IT IN ACTION</WorkflowDemoTrigger>
+          </div>
         </div>
       </div>
     </section>

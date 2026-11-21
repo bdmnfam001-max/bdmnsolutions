@@ -16,10 +16,10 @@ export function About() {
               <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <div className="rounded-2xl bg-ink-900/80 p-4 backdrop-blur">
                   <img
-                    src="/assets/BDsologo.png"
+                    src="/assets/BDsologo-transparent.png"
                     alt="Bedmansky Design Studio logo"
-                    width={765}
-                    height={523}
+                    width={1254}
+                    height={1254}
                     className="h-auto w-56 object-contain"
                   />
                 </div>

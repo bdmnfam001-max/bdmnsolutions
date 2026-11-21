@@ -44,7 +44,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="animate-fade-up relative lg:col-span-6" style={{ animationDelay: '0.24s' }}>
+        <div className="animate-fade-up hero-visual relative lg:col-span-6" style={{ animationDelay: '0.24s' }}>
           <HeroPortfolioCollage />
           <div className="hero-automation" aria-hidden="true">
             <div className="hero-automation__heading">

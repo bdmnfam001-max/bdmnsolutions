@@ -4,6 +4,7 @@ import { PortfolioWindow } from '@/components/PortfolioWindow';
 import { ProjectModal } from '@/components/ProjectModal';
 import { projects, type Project } from '@/data/projects';
 import { scrollToSection } from '@/utils/scroll';
+import { WorkflowDemoTrigger } from '@/components/AutomationWorkflowDemo';
 
 export function Portfolio() {
   const [active, setActive] = useState<Project | null>(null);
@@ -71,6 +72,7 @@ export function Portfolio() {
                   <span key={benefit}><Check size={11} aria-hidden /> {benefit}</span>
                 ))}
               </div>
+              <WorkflowDemoTrigger className="portfolio-automation__demo-link">View interactive demo <ArrowRight size={13} /></WorkflowDemoTrigger>
             </div>
           </div>
 

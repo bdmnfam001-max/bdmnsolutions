@@ -1,10 +1,10 @@
 export function Logo() {
   return (
     <img
-      src="/assets/BDsologo.png"
+      src="/assets/BDsologo-transparent.png"
       alt="Bedmansky Design Studio logo"
-      width={765}
-      height={523}
+      width={1254}
+      height={1254}
       className="h-10 w-auto object-contain sm:h-11"
     />
   );
