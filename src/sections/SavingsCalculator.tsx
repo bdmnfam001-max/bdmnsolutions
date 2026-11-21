@@ -57,7 +57,7 @@ export function SavingsCalculator() {
   const annualCost = weeklyHours * hourlyValue * 52;
 
   return (
-    <section id="calculator" className="editorial-section scroll-mt-20 py-24 sm:py-32">
+    <section id="calculator" className="editorial-section editorial-section--calculator scroll-mt-20 py-24 sm:py-32">
       <div className="container-content relative z-[1]">
         <SectionHeading
           eyebrow="Savings Calculator"

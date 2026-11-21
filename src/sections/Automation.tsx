@@ -149,7 +149,7 @@ function WorkflowDiagram() {
 
 export function Automation() {
   return (
-    <section id="automation" className="editorial-section scroll-mt-20 py-24 sm:py-32">
+    <section id="automation" className="editorial-section editorial-section--automation scroll-mt-20 py-24 sm:py-32">
       <div className="container-content relative z-[1]">
         <SectionHeading
           eyebrow="Automation"

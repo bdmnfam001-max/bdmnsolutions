@@ -17,7 +17,7 @@ function ServiceRow({ label, description }: { label: string; description: string
 
 export function Services() {
   return (
-    <section id="services" className="editorial-section scroll-mt-20 py-24 sm:py-32">
+    <section id="services" className="editorial-section editorial-section--services scroll-mt-20 py-24 sm:py-32">
       <div className="container-content relative z-[1]">
         <SectionHeading
           eyebrow="Services"

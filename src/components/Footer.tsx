@@ -3,7 +3,7 @@ import { Logo } from './Logo';
 import { navItems, services } from '@/data/content';
 import { scrollToSection } from '@/utils/scroll';
 
-const INSTAGRAM_URL = 'https://www.instagram.com/bedmanskydesign/';
+const INSTAGRAM_URL = 'https://www.instagram.com/bedmanskystudio/';
 const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=61596476974102';
 const EMAIL = 'dennisbedmansky@gmail.com';
 

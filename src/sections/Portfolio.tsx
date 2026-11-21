@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowRight, FileText, Cpu, Database } from 'lucide-react';
+import { ArrowRight, FileText, Cpu, BellRing, Check } from 'lucide-react';
 import { PortfolioWindow } from '@/components/PortfolioWindow';
 import { ProjectModal } from '@/components/ProjectModal';
 import { projects, type Project } from '@/data/projects';
@@ -36,35 +36,41 @@ export function Portfolio() {
             </button>
 
             <div
-              className="mt-8 rounded-xl border border-white/10 bg-[#0b0d12] p-4 text-white sm:p-5"
+              className="portfolio-automation mt-8 rounded-xl border border-white/10 bg-[#0b0d12] p-4 text-white sm:p-5"
               aria-label="Illustrative automation example: customer inquiry flows to automation, then to CRM and notification"
             >
-              <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#A7ADB8]">
-                Illustrative automation example
-              </p>
-              <ol className="mt-3 flex items-center gap-2 sm:gap-3">
+              <div className="flex items-start justify-between gap-3">
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#A7ADB8]">
+                    Workflow preview
+                  </p>
+                  <p className="mt-1 text-sm font-semibold text-white">Every lead has a next step.</p>
+                </div>
+                <span className="portfolio-automation__status"><span /> Active</span>
+              </div>
+              <ol className="mt-5 grid grid-cols-[1fr_auto_1fr_auto_1fr] items-start gap-1.5 sm:gap-2">
                 {[
-                  { label: 'Customer Inquiry', icon: FileText },
-                  { label: 'Automation', icon: Cpu },
-                  { label: 'CRM / Notification', icon: Database },
+                  { label: 'Inquiry', detail: 'Captured', icon: FileText },
+                  { label: 'Automation', detail: 'Processed', icon: Cpu },
+                  { label: 'CRM + Alert', detail: 'Organized', icon: BellRing },
                 ].map((node, i, arr) => (
-                  <li key={node.label} className="flex min-w-0 flex-1 items-center gap-2 last:flex-none">
-                    <span className="flex flex-col items-center gap-1.5 text-center">
-                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-[#0878FF]/35 bg-[#0878FF]/12 text-[#4a9bff] sm:h-10 sm:w-10">
-                        <node.icon size={17} aria-hidden />
-                      </span>
-                      <span className="max-w-[5.5rem] text-[10px] font-medium leading-tight text-[#A7ADB8] sm:max-w-none sm:text-[11px]">
-                        {node.label}
-                      </span>
+                  <li key={node.label} className="contents">
+                    <span className="portfolio-automation__node">
+                      <span className="portfolio-automation__icon"><node.icon size={15} aria-hidden /></span>
+                      <span className="text-[10px] font-semibold text-white">{node.label}</span>
+                      <span className="text-[9px] text-[#7f8b9d]">{node.detail}</span>
                     </span>
                     {i < arr.length - 1 && (
-                      <span aria-hidden className="flow-line relative h-px min-w-4 flex-1 self-center bg-white/15">
-                        <span className="flow-pulse" style={{ animationDelay: `${i * 1.7}s` }} />
-                      </span>
+                      <span aria-hidden className="flow-line portfolio-automation__line"><span className="flow-pulse" style={{ animationDelay: `${i * 1.7}s` }} /></span>
                     )}
                   </li>
                 ))}
               </ol>
+              <div className="portfolio-automation__benefits">
+                {['Faster follow-up', 'Less manual admin', 'Time back for business'].map((benefit) => (
+                  <span key={benefit}><Check size={11} aria-hidden /> {benefit}</span>
+                ))}
+              </div>
             </div>
           </div>
 

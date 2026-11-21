@@ -47,17 +47,31 @@ export function Hero() {
         <div className="animate-fade-up relative lg:col-span-6" style={{ animationDelay: '0.24s' }}>
           <HeroPortfolioCollage />
           <div className="hero-automation" aria-hidden="true">
-            <span className="hero-automation__dot">
-              <FileText />
-            </span>
-            <span className="hero-automation__link" />
-            <span className="hero-automation__dot">
-              <Cpu />
-            </span>
-            <span className="hero-automation__link" />
-            <span className="hero-automation__dot">
-              <BellRing />
-            </span>
+            <div className="hero-automation__heading">
+              <span className="hero-automation__live" />
+              <span>Lead flow, simplified</span>
+            </div>
+            <div className="hero-automation__flow">
+              <span className="hero-automation__step">
+                <span className="hero-automation__dot"><FileText /></span>
+                <span>Inquiry</span>
+              </span>
+              <span className="hero-automation__link" />
+              <span className="hero-automation__step">
+                <span className="hero-automation__dot"><Cpu /></span>
+                <span>Automation</span>
+              </span>
+              <span className="hero-automation__link" />
+              <span className="hero-automation__step">
+                <span className="hero-automation__dot"><BellRing /></span>
+                <span>Follow-up</span>
+              </span>
+            </div>
+            <div className="hero-automation__benefits">
+              <span>Faster response</span>
+              <span>Less admin</span>
+              <span>Organized leads</span>
+            </div>
           </div>
         </div>
       </div>

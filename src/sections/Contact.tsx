@@ -4,7 +4,7 @@ import { SectionHeading } from '@/components/SectionHeading';
 import { useTurnstile } from '@/hooks/useTurnstile';
 
 const EMAIL = 'dennisbedmansky@gmail.com';
-const INSTAGRAM_URL = 'https://www.instagram.com/bedmanskydesign/';
+const INSTAGRAM_URL = 'https://www.instagram.com/bedmanskystudio/';
 const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=61596476974102';
 const TURNSTILE_SITE_KEY = import.meta.env.VITE_TURNSTILE_SITE_KEY?.trim() ?? '';
 

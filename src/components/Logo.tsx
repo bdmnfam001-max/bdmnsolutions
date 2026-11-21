@@ -1,7 +1,7 @@
 export function Logo() {
   return (
     <img
-      src="/assets/bedmansky-logo.png"
+      src="/assets/BDsologo.png"
       alt="Bedmansky Design Studio logo"
       width={765}
       height={523}

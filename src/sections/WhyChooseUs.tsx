@@ -3,7 +3,7 @@ import { whyChooseUs } from '@/data/content';
 
 export function WhyChooseUs() {
   return (
-    <section className="py-20 sm:py-28">
+    <section className="editorial-section editorial-section--why scroll-mt-20 py-20 sm:py-28">
       <div className="container-content">
         <SectionHeading
           eyebrow="Why Choose Us"
